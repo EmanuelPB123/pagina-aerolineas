@@ -1,0 +1,244 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>AEROLINEA LATINA</title>
+    <style>
+        #main {
+            animation: change 20s infinite;
+        }
+
+        @keyframes change {
+            0% {
+                background-color: #aabbc5;
+            }
+
+            50% {
+                background-color: #4884ae;
+            }
+
+            100% {
+                background-color: #aabbc5;
+            }
+        }
+
+        #titulo {
+            position: absolute;
+            top: 5rem;
+            left: 1rem;
+        }
+
+        #img{
+            transition: 1s;
+        }
+  
+        #img:hover{
+            transition: 2s;
+            box-shadow:0 0 5rem 1rem black;
+        }
+        
+        #sub {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        #but {
+            background-color: rgba(0, 0, 0, 0.75);
+            color: white;
+        }
+
+        #card {
+            background-color: rgba(245, 245, 245, 0.842);
+        }
+        #txt{
+            background-color: rgba(0, 0, 0, 0.25);
+            transition: 2s;
+            color: rgba(255, 255, 255, 0.75);
+        }
+        #txt:hover{
+            background-color: rgba(0, 0, 0, 0.5);
+            color: rgb(255, 255, 255);
+            transition: 1s;
+        }
+    </style>
+
+<body id="main">
+    <!-- header -->
+    <div class="col-12">
+        <h1 id="titulo" class=" h1-responsive d-none d-sm-block">Aerolinea Latina
+        </h1>
+        <img src="img/plane-841441_1920.jpg" id="img" class="img-fluid" alt="...">
+
+    </div>
+    <!-- main -->
+
+
+
+    <div class="container-fluid d-block d-sm-none" id="main">
+        <br>
+        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample1">
+            <h2 class="h2-responsive">Vuelos programados</h2>
+        </a>
+        <div class="row-fluid">
+            <div class="collapse" id="multiCollapseExample1">
+                <div class="card card-body" id="card">
+                    <h4 class="h4-responsive">Para tener los datos de un vuelo haz click <a href="">aqui</a> </h4>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2"
+            aria-expanded="false" aria-controls="multiCollapseExample2">
+            <h2 class="h2-responsive">Destinos</h2>
+        </button>
+        <div class="row-fluid">
+            <div class="collapse" id="multiCollapseExample2">
+                <div class="card card-body" id="card">
+                    <h4 class="h4-responsive"> Para crear tu propio vuelo haz click <a href="">aqui</a></h4>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <button class="btn btn-primary btn-12" type="button" data-bs-toggle="collapse"
+            data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">
+            <h2 class="h2-responsive">Paquetes especiales</h2>
+        </button>
+        <div class="row-fluid">
+            <div class="collapse" id="multiCollapseExample3">
+                <div class="card card-body" id="card">
+                    <h4 class="h4-responsive"> Para ver ofertas de vuelos haga click <a href="">aqui</a></h4>
+                </div>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <div class="container d-none d-sm-block">
+        <br>
+        <div class="row">
+            <div class="col">
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button"
+                    aria-expanded="false" aria-controls="multiCollapseExample1">
+                    <h4 class="h2-responsive">Vuelos programados</h4>
+                </a>
+                <div class="row-fluid">
+                    <div class="collapse" id="multiCollapseExample1">
+                        <div class="card card-body" id="card">
+                            <h6 class="h4-responsive">Para tener los datos de un vuelo haz click <a href="">aqui</a>
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+                    <h4 class="h2-responsive">Destinos</h4>
+                </button>
+                <div class="row-fluid">
+                    <div class="collapse" id="multiCollapseExample2">
+                        <div class="card card-body" id="card">
+                            <h6 class="h4-responsive"> Para crear tu propio vuelo haz click <a href="">aqui</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <button class="btn btn-primary btn-12" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">
+                    <h4 class="h2-responsive">Paquetes especiales</h4>
+                </button>
+                <div class="row-fluid">
+                    <div class="collapse" id="multiCollapseExample3">
+                        <div class="card card-body" id="card">
+                            <h6 class="h4-responsive"> Para ver ofertas de vuelos haga click <a href="">aqui</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col">
+
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+    
+        </div>
+        <div class="col">
+     
+        </div>
+    </div>
+<br><br>
+
+    <!-- footer -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-1 "></div>
+            <div class="card col-sm-10 col-xs-12" id="txt" >
+                <br>
+                <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, minima omnis inventore voluptatum
+                    nostrum sed! Sed distinctio quas deserunt vitae odio, consectetur mollitia id ducimus optio
+                    consequuntur, qui delectus corporis?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, minima omnis inventore voluptatum
+                    nostrum sed! Sed distinctio quas deserunt vitae odio, consectetur mollitia id ducimus optio
+                    consequuntur, qui delectus corporis?
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, minima omnis inventore voluptatum
+                    nostrum sed! Sed distinctio quas deserunt vitae odio, consectetur mollitia id ducimus optio
+                    consequuntur, qui delectus corporis?
+                </h4>
+                <br>
+            </div>
+        </div>
+        <br><br><br>
+        <div >
+            <div class="row" id="col">
+            <div class="col">
+                <img src="https://media.staticontent.com/media/pictures/d6068d49-5a7e-4b84-ba41-9f5fdfc32e4d/79x60/" alt="IATA" >
+            </div>
+            <div class="col">
+                <img src="https://media.staticontent.com/media/pictures/85599dc5-0741-4f1d-9603-88b05c67a3df/90x60/" alt="Pdp">
+            </div>
+            <div class="col">
+                <img src="https://media.staticontent.com/media/pictures/55152770-ea58-4eff-b218-384e1f73cf7b/" alt="Data fiscal">
+            </div>
+        </div>
+        <br>
+        <div class="row" id="col">
+            <div class="col">
+                <img src="https://media.staticontent.com/media/pictures/4aed8b07-337c-40b5-8208-9a3bf7d5c45a/" alt="Ministerio de turismo">
+                </div>
+            <div class="col">
+                <img src="https://media.staticontent.com/media/pictures/88b9fe58-60f6-49f5-9665-3d63a2dfff6e/60x60/" alt="Ganador 2016 Turismo">
+            </div>
+            <div class="col">
+                <img src="https://media.staticontent.com/media/pictures/d9de1652-a1e9-4c9c-95b4-46546c605a9c/80x80/" alt="Defensor de cliente">
+            </div>                           
+    </div>
+    <br>
+
+    <!-- Script -->
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--     <script src="/bootstrap.bundle.min.js"></script> -->
+    <script src="js/popper.min.js"></script>
+</body>
+
+</html>
